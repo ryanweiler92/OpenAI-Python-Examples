@@ -43,7 +43,7 @@ class AzureResponses:
             "required": ["players"],
         }
 
-    def azure_request(self):
+    def standard_request(self):
         client = AzureOpenAI(
             azure_endpoint=self.azure_endpoint,
             api_key=self.azure_key,
@@ -59,3 +59,32 @@ class AzureResponses:
         )
 
         return completion.choices[0].message.content
+
+    def get_structured_response_json(self):
+        """Get structured response from OpenAI model with JSON schema"""
+        client = AzureOpenAI(
+            azure_endpoint=self.azure_endpoint,
+            api_key=self.azure_key,
+            api_version="2024-10-21",
+        )
+
+        response = client.beta.chat.completions.parse(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "user",
+                    "content": "Name a few Manchester United players you know with their positions, countries, and skill ratings.",
+                },
+            ],
+            response_format={
+                "type": "json_schema",
+                "json_schema": {"name": "player_schema", "schema": self.json_schema},
+            },
+        )
+
+        return response.choices[0].message.content
+
+
+if __name__ == "__main__":
+    azure = AzureResponses()
+    print(azure.get_structured_response_json())
