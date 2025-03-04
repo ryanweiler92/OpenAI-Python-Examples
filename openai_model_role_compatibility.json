@@ -1,0 +1,66 @@
+{
+  "o1": {
+    "system": {
+      "supported": true,
+      "response": "Hello! I can help you with a wide range of tasks, such as providing explanations, brainstorming ideas, summarizing text, writing drafts, or even solving puzzles. If you have a question or need assistance with something, just let me know\u2014I'm here to help!",
+      "error": null,
+      "user_fallback_works": null,
+      "user_fallback_response": null
+    },
+    "developer": {
+      "supported": true,
+      "response": "Hello! I can help with a wide range of tasks, such as:\n\n\u2022 Answering general knowledge questions.  \n\u2022 Writing, editing, and summarizing text.  \n\u2022 Brainstorming ideas or providing suggestions.  \n\u2022 Translating between languages.  \n\u2022 Giving explanations on various topics.  \n\u2022 Helping with research and fact-checking.  \n\nIf there\u2019s something specific you\u2019d like to do or know, just let me know!",
+      "error": null,
+      "user_fallback_works": null,
+      "user_fallback_response": null
+    }
+  },
+  "o1-mini": {
+    "system": {
+      "supported": false,
+      "response": null,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'messages[0].role' does not support 'system' with this model.\", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}",
+      "user_fallback_works": true,
+      "user_fallback_response": "Hello! I'm ChatGPT, a language model developed by OpenAI. I can help you with a wide range of tasks, such as:\n\n- **Answering Questions:** Whether it's about science, history, technology, or other topics, feel free to ask.\n- **Writing Assistance:** I can help you draft emails, essays, stories, or any other written content.\n- **Research Help:** Need information on a specific subject? I can provide summaries and explanations.\n- **Learning Support:** I can assist with understanding complex concepts or preparing for exams.\n- **Creative Ideas:** From brainstorming project ideas to coming up with creative solutions, I'm here to help.\n- **Language Translation:** I can translate text between multiple languages.\n\nIf you have anything specific in mind, just let me know!"
+    },
+    "developer": {
+      "supported": false,
+      "response": null,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'messages[0].role' does not support 'developer' with this model.\", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}",
+      "user_fallback_works": true,
+      "user_fallback_response": "Hello! I'm here to help you with a wide variety of tasks, including:\n\n- **Answering Questions:** Whether it's about science, history, technology, or everyday topics, feel free to ask.\n- **Writing Assistance:** I can help you draft emails, create essays, develop stories, or refine your writing.\n- **Learning and Study Help:** Need explanations on complex concepts or assistance with homework? I'm here for that.\n- **Creative Ideas:** From brainstorming project ideas to coming up with creative solutions, I can assist.\n- **Coding Help:** If you're working on programming projects, I can help debug code or explain coding concepts.\n- **Recommendations:** Looking for book suggestions, movie recommendations, or tips on other resources? Just let me know.\n- **General Conversations:** Sometimes, you might just want to chat, and I'm here for that too!\n\nFeel free to let me know how I can assist you today!"
+    }
+  },
+  "o3": {
+    "system": {
+      "supported": false,
+      "response": null,
+      "error": "Error code: 404 - {'error': {'message': 'The model `o3` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",
+      "user_fallback_works": false,
+      "user_fallback_response": null
+    },
+    "developer": {
+      "supported": false,
+      "response": null,
+      "error": "Error code: 404 - {'error': {'message': 'The model `o3` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",
+      "user_fallback_works": false,
+      "user_fallback_response": null
+    }
+  },
+  "o3-mini": {
+    "system": {
+      "supported": true,
+      "response": "Hello! I'm ChatGPT, an AI language model here to help with a wide variety of tasks. I can:\n\n\u2022 Answer general questions or provide information on many topics.\n\u2022 Help you brainstorm, write, and edit text \u2013 whether it's creative writing, emails, essays, or reports.\n\u2022 Offer explanations on concepts across subjects like science, technology, history, and more.\n\u2022 Assist with coding questions and help debug programming issues.\n\u2022 Summarize, translate, or rephrase texts.\n\u2022 Engage in conversation and provide recommendations or advice based on the information you share.\n\nFeel free to ask me anything or let me know how I can assist you today!",
+      "error": null,
+      "user_fallback_works": null,
+      "user_fallback_response": null
+    },
+    "developer": {
+      "supported": true,
+      "response": "Hello! I'm ChatGPT, a large language model here to help you with a wide range of topics. I can answer questions, offer explanations, help brainstorm ideas, assist with coding problems, create summaries, provide creative writing, and much more. Whether you're curious about science, literature, history, technology, or simply need a bit of advice, feel free to ask and I'll do my best to assist you. What would you like to talk about today?",
+      "error": null,
+      "user_fallback_works": null,
+      "user_fallback_response": null
+    }
+  }
+}

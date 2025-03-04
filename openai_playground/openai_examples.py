@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from openai_playground.image import url_to_base64
+from openai_playground.image_converter import url_to_base64
 import pprint
 
 load_dotenv()

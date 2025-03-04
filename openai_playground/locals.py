@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from openai_playground.image import url_to_base64
+from openai_playground.image_converter import url_to_base64
 import pprint
 
 load_dotenv()
@@ -63,14 +63,13 @@ class LocalModels:
         )
 
         try:
-            base64_image = url_to_base64(url)
             response = client.chat.completions.create(
                 messages=[
                     {
                         "role": "user",
                         "content": [
                             {"type": "text", "text": prompt},
-                            {"type": "image_url", "image_url": {"url": base64_image}},
+                            {"type": "image_url", "image_url": {"url": url}},
                         ],
                     },
                 ],
